@@ -11,6 +11,10 @@ Repositório contendo api para teste de backend.
 ```cmd
 git clone https://github.com/lucas-yukioh/testbackend-api.git
 ```
+> - **Fazer o build**
+```cmd
+mvnw clean install
+```
 > - **Montar as imagens**
 ```cmd
 docker-compose build
