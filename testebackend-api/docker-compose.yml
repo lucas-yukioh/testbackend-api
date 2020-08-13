@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  testebackend-mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-data:/docker-entrypoint-initdb.d
+
+  testebackend-api:
+    image: testebackend-api:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - testebackend-mysql
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://testebackend-mysql:3306/test?allowPublicKeyRetrieval=true&useSSL=false&autoReconnect=true&maxReconnects=10&initialTimeout=4
+      SPRING_DATASOURCE_USERNAME: test
+      SPRING_DATASOURCE_PASSWORD: test
