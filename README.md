@@ -6,7 +6,7 @@ Repositório contendo api para teste de backend.
 - Docker
 - MySQL 8.0
 
-Pode haver conflito na porta usada pelo MySQL na execução dos containers (Porta 3306).
+Pode haver conflito na porta usada pelo MySQL na execução dos containers com o serviço do Windows (Porta 3306).
 
 ## Executando os containers
 
