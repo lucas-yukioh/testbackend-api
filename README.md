@@ -4,6 +4,7 @@ Repositório contendo api para teste de backend.
 ## Pré-requisitos
 - Java 8
 - Docker
+- MySQL 8.0
 
 ## Executando os containers
 
