@@ -9,7 +9,7 @@ Repositório contendo api para teste de backend.
 
 > - **Baixar o proejto**
 ```cmd
-git clone https://github.com/lucas-yukioh/testbackend-api.git
+git clone https://github.com/lucas-yukioh/testebackend.git
 ```
 > - **Fazer o build**
 ```cmd
