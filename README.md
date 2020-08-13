@@ -46,10 +46,28 @@ GET http://localhost:8080/api/cargos/{id}
 - Inserir Cargo
 ```cmd
 POST http://localhost:8080/api/cargos
+
+Body
+{
+    "cargoNome": "Teste",
+    "trilha": { 
+        "id": 1 
+    },
+    "cargoMissao": "Teste"
+}
 ```
 - Atualizar Cargo
 ```cmd
 PUT http://localhost:8080/api/cargos/{id}
+
+Body
+{
+    "cargoNome": "Teste",
+    "trilha": { 
+        "id": 1 
+    },
+    "cargoMissao": "Teste"
+}
 ```
 - Deletar Cargo
 ```cmd
@@ -67,10 +85,26 @@ GET http://localhost:8080/api/trilhas/{id}
 - Inserir Trilha
 ```cmd
 POST http://localhost:8080/api/trilhas
+
+Body
+{
+    "trilhaNome": "Teste",
+    "diretoria": "Teste",
+    "missaoFormal": "Teste",
+    "missaoAlternativa": "Teste"
+}
 ```
 - Atualizar Trilha
 ```cmd
 PUT http://localhost:8080/api/trilhas/{id}
+
+Body
+{
+    "trilhaNome": "Teste",
+    "diretoria": "Teste",
+    "missaoFormal": "Teste",
+    "missaoAlternativa": "Teste"
+}
 ```
 - Deletar Trilha
 ```cmd
